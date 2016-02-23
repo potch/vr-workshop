@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+   <style>
+     canvas {
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+     }
+   </style>
+   <body>
+      <canvas id="gl"></canvas>
+
+      <script type="x-shader/x-vertex" id="vshader">
+        attribute vec3 position;
+        uniform mat4 Pmatrix;
+        uniform mat4 Vmatrix;
+        uniform mat4 Mmatrix;
+        attribute vec3 color;
+        varying vec3 vColor;
+
+        void main(void) {
+          gl_Position = Pmatrix*Vmatrix*Mmatrix*vec4(position, 1.);
+          vColor = color;
+        }
+      </script>
+
+      <script type="x-shader/x-fragment" id="fshader">
+        precision mediump float;
+        varying vec3 vColor;
+
+        void main(void) {
+          gl_FragColor = vec4(vColor, 1.);
+        }
+      </script>
+
+      <script src="js/basic-webgl.js"></script>
+   </body>
+</html>

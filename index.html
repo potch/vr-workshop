@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browsers in the Third Dimension!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="decky.css">
+    <link rel="stylesheet" href="solarized_light.css">
+    <link rel="stylesheet" href="truecrimes_regular_macroman/stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="highlight.min.js"></script>
+    <style>
+      .filmtitle {
+        font-family: 'true_crimesregular';
+        perspective: 30vh;
+        transform-style: preserve-3d;
+        text-align: center;
+        line-height: 1em;
+      }
+      .filmtitle > div {
+        transform:  rotateY(5deg) skewY(-7deg) translate3d(.8em, -.5em, 0em) ;
+      }
+      .filmtitle span {
+        display: inline-block;
+        font-size: 1.1em;
+        transform: translateY(.2em);
+      }
+      .filmtitle > div > div:nth-child(n+2) {
+        text-shadow: .05em 0 0 rgba(255,0,0,.5),
+                     -.05em 0 0 rgba(0,255,255,.8);
+      }
+      .filmtitle i {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div style="position: relative; z-index: 1">
+      <h1 class="filmtitle">
+        <div>
+          <div style="font-size: 1.2em; margin-bottom:0em;transform: translateX(-.4em);">
+            Browsers
+            <i style="font-size: .5em; display: inline-block; transform: translateY(-.3em)">-in the-</i>
+          </div>
+          <div style="font-size: 1.8em; transform:translateX(-1.4em); margin-bottom: .2em;"><span>T</span>hird</div>
+          <div style="font-size: 2em;transform:translateX(.25em)"><span>D</span>imension</div>
+        </div>
+      </h1>
+      </div>
+    </section>
+    <section>
+      <iframe class="cover" src="http://mozvr.com/demos/sechelt/?sound=false"></iframe>
+      <h2>
+    </section>
+    <section>
+      <img src="img/zuck-vr.jpg">
+    </section>
+    <section>
+      <img src="img/webkit.png">
+      <h1>2004</h1>
+    </section>
+    <section>
+      <h1><code>&lt;canvas></code></h1>
+    </section>
+    <section>
+      <h1><code>getContext('2d')</code></h1>
+    </section>
+    <section>
+      <h1><code>'2d'</code></h1>
+    </section>
+    <section>
+      <h1><code>'3d' ?</code></h1>
+    </section>
+    <section>
+      <h1><code>'webgl'</code></h1>
+    </section>
+    <section>
+      <img style="width: 80%" src="img/WebGL_Logo.png">
+    </section>
+    <section>
+      <img style="width: 74%" src="img/OpenGL_Logo.png">
+    </section>
+    <section>
+      <iframe class="cani" src="http://caniuse.com/webgl/embed"></iframe>
+    </section>
+    <section>
+      <iframe class="zoom-2" src="https://www.shadertoy.com/embed/XdsGDB?gui=true&t=10&paused=false&muted=false"></iframe>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <iframe src="basic-webgl.html"></iframe>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <pre><code data-src="js/basic-webgl.js"></code></pre>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <pre><code data-src="js/shaders.html"></code></pre>
+    </section>
+    <section>
+      <h2>Three.js</h2>
+      <iframe src="basic-threejs.html"></iframe>
+    </section>
+    <section>
+      <h2>Three.js</h2>
+      <pre><code data-src="js/basic-threejs.js"></code></pre>
+    </section>
+    <section>
+      <h2>A-Frame</h2>
+      <iframe src="basic-aframe.html"></iframe>
+    </section>
+    <section>
+      <h2>A-Frame</h2>
+      <pre><code>&lt;a-scene>
+  &lt;a-cube position="0 2 0" color="#4CC3D9"
+          width="2" height="2" depth="2">
+    &lt;a-animation attribute="rotation"
+                 to="360 1080 0"
+                 dur="10000"
+                 easing="linear"
+                 repeat="indefinite">
+    &lt;/a-animation>
+  &lt;/a-cube>
+  &lt;a-sky color="#888888">&lt;/a-sky>
+&lt;/a-scene></code></pre>
+    </section>
+    <section>
+      <img style="width:80%" src="img/aframe-name.svg">
+    </section>
+    <section>
+      <img src="img/wclogo.svg">
+      <h2>Web Components</h2>
+    </section>
+    <section>
+      <img style="border-radius: 20%; background: #60a; padding: .8em;" src="img/customelements.svg">
+      <h2>Custom Elements</h2>
+    </section>
+    <section style="font-size: 1.2em">
+      <code>&lt;a-scene></code>
+      ☟
+      <code>new THREE.Scene()</code>
+    </section>
+    <section style="font-size: 1.2em">
+      <code>&lt;a-cube></code>
+      ☟
+      <code>THREE.BoxGeometry</code>
+      <code>THREE.MeshLambertMaterial</code>
+      <code>THREE.Mesh</code>
+    </section>
+    <section>
+      <div class="stack">
+        <div style="background: rgba(239, 45, 94, .4)">A-Frame</div>
+        <div style="background: rgba(103, 58, 183, .4)">Custom Elements</div>
+        <div style="background: rgba(33, 148, 206, .4)">Three.js</div>
+        <div style="background: rgba(0, 128, 0, .4)">
+          <div>WebGL</div>
+          <div>WebVR</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>WebVR</h1>
+    </section>
+    <section>
+      <iframe src="https://mozvr.github.io/webvr-spec/webvr.html">
+      </iframe>
+    </section>
+    <section>
+      <h1>Double Vision</h1>
+    </section>
+    <section>
+      <h1><s>Double</s> Vision</h1>
+    </section>
+    <section>
+      <h1>Binocular Vision</h1>
+    </section>
+    <section>
+      <h2>🎥</h2>
+      <img src="img/single-camera.png">
+    </section>
+    <section>
+      <h2>🎥 🎥</h2>
+      <img src="img/two-camera.png">
+    </section>
+    <section>
+      <h2><code>navigator.getVRDevices()</code></h2>
+    </section>
+    <section>
+      <h1>👁← PD →👁</h1>
+    </section>
+    <section>
+      <h2><code>HMDVRDevice</code></h2>
+      <pre><code>var eyeParamsL = vrHMD.getEyeParameters('left');
+var eyeParamsR = vrHMD.getEyeParameters('right');
+
+LeftCamera.position.x = eyeParamsL.eyeTranslation;
+RightCamera.position.x = eyeParamsR.eyeTranslation;</code></pre>
+    </section>
+    <section>
+      <h2><code>PositionSensorVRDevice</code></h2>
+      <pre><code>var state = positionSensor.getState();
+
+state.position // 3d vector
+state.orientation // Quaternion
+</code></pre>
+    </section>
+    <section>
+      <h1><code>THREE.VREffect</code></h1>
+    </section>
+    <section>
+      <h2>Primitives</h2>
+    </section>
+    <section>
+      <h2>Primitives</h2>
+      <h3>
+        <code>&lt;a-camera></code>&nbsp;&nbsp;
+        <code>&lt;a-cube></code>&nbsp;&nbsp;
+        <code>&lt;a-curvedimage></code>&nbsp;&nbsp;
+        <code>&lt;a-cylinder></code>&nbsp;&nbsp;
+        <code>&lt;a-image></code>&nbsp;&nbsp;
+        <code>&lt;a-light></code>&nbsp;&nbsp;
+        <code>&lt;a-model></code>&nbsp;&nbsp;
+        <code>&lt;a-plane></code>&nbsp;&nbsp;
+        <code>&lt;a-sky></code>&nbsp;&nbsp;
+        <code>&lt;a-sphere></code>&nbsp;&nbsp;
+        <code>&lt;a-video></code>&nbsp;&nbsp;
+        <code>&lt;a-videosphere></code>
+      </h3>
+    </section>
+    <section>
+      <img src="img/more-power.png">
+    </section>
+    <section>
+      <h1><code>&lt;a-entity></code></h1>
+    </section>
+    <section>
+      <pre><code>&lt;a-sphere radius="4" color="#FC0">&lt;a-sphere></code></pre>
+      <h2 class="nope">☟</h2>
+      <pre class="nope"><code>&lt;a-entity geometry="primitive: sphere;
+                    radius: 4;"
+          material="color: #FC0;">&lt;/a-entity>
+      </code></pre>
+    </section>
+    <section>
+      <pre><code>&lt;a-sphere radius="4" color="#FC0">&lt;a-sphere></code></pre>
+      <h2>☟</h2>
+      <pre><code>&lt;a-entity geometry="primitive: sphere;
+                    radius: 4;"
+          material="color: #FC0;">&lt;/a-entity>
+      </code></pre>
+    </section>
+    <section>
+      <img src="img/oculus.jpg">
+    </section>
+    <section>
+      <img src="img/Google-Cardboard.jpg">
+    </section>
+    <section>
+      <img src="img/gyros.png">
+    </section>
+    <section>
+      <img src="img/Google-Cardboard.jpg">
+    </section>
+    <section>
+      <h2>Resources</h2>
+      <div>
+        <b>These Links and More!</b>
+        <a href="http://bit.ly/vr-pad">http://bit.ly/vr-pad</a>
+      </div><div>
+        <b>A-Frame Docs</b>
+        <a href="https://aframe.io/docs/">https://aframe.io/docs/</a>
+      </div><div>
+        <b>Example CodePen</b>
+        <a href="http://bit.ly/aframe-sample">http://bit.ly/aframe-sample</a>
+      </div><div>
+        <b>Mozilla VR</b>
+        <a href="http://mozvr.com/">http://mozvr.com/</a>
+      </div><div>
+        <b>Made With A-Frame</b>
+        <a href="https://aframevr.tumblr.com/">https://aframevr.tumblr.com/</a>
+      </div>
+    </section>
+    <footer>
+      <div class="progress talk-progress"></div>
+      <div class="progress time-progress"></div>
+    </footer>
+    <script src="decky.js"></script>
+    <script>
+
+      var els = document.querySelectorAll('code[data-src]');
+      Array.from(els).forEach(function (el) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+          el.innerHTML = this.responseText.replace('<', '&lt;', 'g');
+          hljs.highlightBlock(el);
+        });
+        xhr.open("GET", el.getAttribute('data-src'));
+        xhr.send();
+      });
+
+      var iframes = document.querySelectorAll('iframe');
+      iframes = Array.from(iframes);
+      iframes.forEach(function (i) {
+        var src = i.src;
+        i.setAttribute('data-src', src);
+        i.src = '';
+      });
+
+      var talkProgress = document.querySelector('.talk-progress');
+      var timeProgress = document.querySelector('.time-progress');
+      var sTime;
+      var timer;
+      var going = false;
+      decky.onSlideChange = function (n) {
+        if (n > 1 && !going) {
+          going = true;
+          timer = setInterval(update, 100);
+          sTime = Date.now();
+          console.log('starting timer');
+        }
+        var pct = (n / decky.num * 100) + '%';
+        talkProgress.style.width = pct;
+
+        iframes.forEach(function (i) {
+          i.src = '';
+        });
+
+        var f = document.querySelector('.active iframe');
+        if (f && window.top === window) {
+          f.src = f.getAttribute('data-src');
+        }
+      };
+      function update() {
+        var time = ((Date.now() - sTime) / (35 * 60 * 1000)) * 100 + '%';
+        timeProgress.style.width = time;
+      }
+    </script>
+    <script>
+
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
